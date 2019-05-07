@@ -33,7 +33,7 @@ class App extends Component {
       case true:
         return (
           <CardSection>
-            <Button>
+            <Button onPress={() => firebase.auth().signOut()}>
               Log Out
             </Button>
           </CardSection>
